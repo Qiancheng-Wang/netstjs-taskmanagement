@@ -20,4 +20,11 @@ export class AuthController {
   ): Promise<{ accessToken: string }> {
     return this.authService.signIn(authCredentialsDto);
   }
+
+  @Post('/reset_password')
+  resetPassword(
+    @Body(ValidationPipe) authCredentialsDto: AuthCredentialsDto,
+  ): Promise<User> {
+    return this.authService.resetPassword(authCredentialsDto);
+  }
 }
