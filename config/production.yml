@@ -1,2 +1,7 @@
+server:
+  origin: 'http://my-nestjs-taskmanaegment-fe.s3-website-ap-southeast-2.amazonaws.com/'
 db:
   synchronize: false
+
+jwt:
+  secret: 'topSecret51'

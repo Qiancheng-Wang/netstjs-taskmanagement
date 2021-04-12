@@ -6,8 +6,8 @@ import {
   Unique,
   OneToMany,
 } from 'typeorm';
-import * as bcrypt from 'bcrypt';
-import { Task } from 'src/tasks/tasks.entity';
+import * as bcrypt from 'bcryptjs';
+import { Task } from '../tasks/tasks.entity';
 
 @Entity()
 @Unique(['username'])

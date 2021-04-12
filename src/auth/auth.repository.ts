@@ -4,7 +4,7 @@ import {
   NotFoundException,
   UnauthorizedException,
 } from '@nestjs/common';
-import * as bcrypt from 'bcrypt';
+import * as bcrypt from 'bcryptjs';
 import { EntityRepository, Repository } from 'typeorm';
 import { User } from './auth.entity';
 import { AuthCredentialsDto } from './dto/auth-credentials.dto';
